@@ -15,6 +15,9 @@ Currently, it's not usable so there isn't much to write here :) But I intend to 
 least, with a Linux binary coming afterwards hopefully (if I can learn how to compile a Linux binary, that is). My rough
 idea for the code makes me think it will be cross-platform by nature, but we'll see if that actually ends up happening.
 
+My current plan is for the .env file to be populated with the both the local and remote mod directory file paths and for
+the mods themselves to be read from a CSV file. Once those are configured, the user should have to just run the program.
+
 ## Planned features
 At its core, this is a pretty simple project trying to solve a pretty simple problem, so the feature set will likely
 stay pretty small. But who knows what the future holds! For now, this is what I'm going for:
@@ -23,6 +26,12 @@ stay pretty small. But who knows what the future holds! For now, this is what I'
 - Simple GUI to keep users from having to use the command line if they are not comfortable with that
 - Requires minimal intervention on the part of the user aside from specifying the two directories and a list of mods
   - I'm not sure if I want the folder paths to be specified via GUI or in the mod list itself.
+
+## Current limitations
+The one glaring issue I see right now is that all of the file paths used in this program are Windows-style file paths,
+meaning that copying from a from Linux system to another does not work. This is not an issue in my environment because
+I play on a Windows PC and copy mod files to my Linux server mounted via SMB, but it is something that I will need to
+address in the future.
 
 ## Contribution guidlines
 I am still such a novice programmer, so I welcome basically any interaction with this project that could help me learn.
